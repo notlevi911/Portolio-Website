@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+/* Mobile view */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger menu */
+    }
+
+    .right ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background-color: rgb(22, 22, 63);
+        width: 200px;
+        border-radius: 5px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .right ul li {
+        margin: 10px 0;
+    }
+
+    .right ul.show {
+        display: flex;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 500px 0; /* Adds space inside each section */
+    margin: 50px 0;  /* Adds space outside each section */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(3, 3, 44);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+} 
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 93px;
+    background-color: rgb(22, 22, 63);
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(22, 22, 63); /* Keep your navbar background */
+    z-index: 1000; /* Ensures it stays on top of other content */
+    padding: 15px 0;
+}
+  
+body {
+    padding-top: 100px; /* Prevent content from hiding behind the navbar */
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+nav ul li a.active {
+    color: rgb(139, 139, 233); /* Change text color */
+    font-weight: bold; /* Make text bold */
+    border-bottom: 2px solid rgb(139, 139, 233); /* Add underline */
+    transition: all 0.3s ease-in-out;
+}
+
+
+nav ul li{
+        list-style: none;
+        margin: 0 23px ;
+}
+nav ul li a{
+        text-decoration: none;
+        color: white;
+}
+nav ul li a:hover{
+        
+        color: rgb(139, 139, 233);
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh; /* Makes sure it takes full screen height */
+    margin: 0;
+    padding: 50px 0;
+}
+.firstsection >div{
+    width: 30%;
+}
+.leftsection{
+    font-size: 3rem;
+    margin: 70px 0;
+}
+.rightsection img{
+    width: 80%;
+    
+    
+}
+.purple{
+     color: rgb(146, 71, 216);
+}
+#element{
+    color: rgb(155, 98, 201);
+    text-shadow: 0px 0px 10px rgba(155, 98, 201, 0.8);
+    animation: glow 1.5s infinite alternate;
+}

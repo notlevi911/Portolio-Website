@@ -7,87 +7,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: rgb(3, 3, 44);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        } 
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 93px;
-            background-color: rgb(22, 22, 63);
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
+    <link rel="stylesheet" href="file.css">
 
-        }
-        nav ul li{
-                list-style: none;
-                margin: 0 23px ;
-        }
-        nav ul li a{
-                text-decoration: none;
-                color: white;
-        }
-        nav ul li a:hover{
-                
-                color: rgb(139, 139, 233);
-        }
-        .left{
-            font-size: 1.5rem;
-        }
-        .firstsection{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 80px 0;
-        }
-        .firstsection >div{
-            width: 30%;
-        }
-        .leftsection{
-            font-size: 3rem;
-            margin: 70px 0;
-        }
-        .rightsection img{
-            width: 80%;
-            
-            
-        }
-        .purple{
-             color: rgb(146, 71, 216);
-        }
-        #element{
-            color: rgb(155, 98, 201);
-        }
-    </style>
 
 </head>
 <body>
     <header>
         <nav>
-            <div class="left"> LEVI-Portfolio</div>
+            <div class="left">LEVI-Portfolio</div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger Icon -->
             <div class="right">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">Services</a></li>
-                        <li><a href="/">Past Porjects</a></li>
-                        <li><a href="/">Contact</a></li>
-                    </ul>
+                <ul id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Past Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="firstsection">
+        <section id ='home'class="firstsection">
             <div class="leftsection">
                 Hi my name is <span class="purple"> LEVI</span>
                 <div>and i am a passionate</div>
@@ -98,6 +39,22 @@
             </div>
 
         </section>
+        <section id="about">
+            <h1>About Me</h1>
+        </section>
+        
+        <section id="services">
+            <h1>My Services</h1>
+        </section>
+        
+        <section id="projects">
+            <h1>My Projects</h1>
+        </section>
+        
+        <section id="contact">
+            <h1>Contact Me</h1>
+        </section>
+
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
      <!-- Setup and start animation! -->
@@ -107,5 +64,8 @@
       typeSpeed: 50,
     });
   </script>
+  <script src="script.js"></script>
+
+
 </body>
 </html>
