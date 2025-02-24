@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
 .menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: #E0E0E0; /* Light Gray */
 }
 /* Mobile view */
 @media screen and (max-width: 768px) {
+   
     nav {
         flex-direction: row;
         justify-content: space-between;
@@ -18,6 +20,8 @@
 
     .menu-icon {
         display: block; /* Show the hamburger menu */
+        padding-left: 150px;
+
     }
 
     .right ul {
@@ -26,7 +30,7 @@
         position: absolute;
         top: 70px;
         right: 10px;
-        background-color: rgb(22, 22, 63);
+        background-color: #222222; /* Dark Gray */
         width: 200px;
         border-radius: 5px;
         padding: 10px 0;
@@ -40,22 +44,23 @@
     .right ul.show {
         display: flex;
     }
+    
 }
 html {
     scroll-behavior: smooth;
 }
 
 section {
-    padding: 500px 0; /* Adds space inside each section */
-    margin: 50px 0;  /* Adds space outside each section */
+    padding: 500px 0;
+    margin: 50px 0;
 }
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(3, 3, 44);
-    color: white;
+    background-color: #111111; /* Black */
+    color: #E0E0E0; /* Light Gray */
     font-family: 'Poppins', sans-serif;
 } 
 nav{
@@ -63,34 +68,32 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 93px;
-    background-color: rgb(22, 22, 63);
+    background-color: #333333; /* Gray */
 }
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(22, 22, 63); /* Keep your navbar background */
-    z-index: 1000; /* Ensures it stays on top of other content */
+    background-color: #333333; /* Gray */
+    z-index: 1000;
     padding: 15px 0;
 }
   
 body {
-    padding-top: 100px; /* Prevent content from hiding behind the navbar */
+    padding-top: 100px;
 }
 
 nav ul{
     display: flex;
     justify-content: center;
-
 }
 nav ul li a.active {
-    color: rgb(139, 139, 233); /* Change text color */
-    font-weight: bold; /* Make text bold */
-    border-bottom: 2px solid rgb(139, 139, 233); /* Add underline */
+    color: #B0B0B0; /* Medium Gray */
+    font-weight: bold;
+    border-bottom: 2px solid #B0B0B0; /* Medium Gray */
     transition: all 0.3s ease-in-out;
 }
-
 
 nav ul li{
         list-style: none;
@@ -98,11 +101,10 @@ nav ul li{
 }
 nav ul li a{
         text-decoration: none;
-        color: white;
+        color: #E0E0E0; /* Light Gray */
 }
 nav ul li a:hover{
-        
-        color: rgb(139, 139, 233);
+        color: #B0B0B0; /* Medium Gray */
 }
 .left{
     font-size: 1.5rem;
@@ -111,7 +113,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 100vh; /* Makes sure it takes full screen height */
+    min-height: 100vh;
     margin: 0;
     padding: 50px 0;
 }
@@ -124,32 +126,30 @@ nav ul li a:hover{
 }
 .rightsection img{
     width: 80%;
-    
-    
 }
 .purple{
-     color: rgb(146, 71, 216);
+     color: #B0B0B0; /* Medium Gray */
 }
 #element{
-    color: rgb(155, 98, 201);
-    text-shadow: 0px 0px 10px rgba(155, 98, 201, 0.8);
+    color: #B0B0B0; /* Medium Gray */
+    text-shadow: 0px 0px 10px rgba(176, 176, 176, 0.8);
     animation: glow 1.5s infinite alternate;
 }
 /* For Webkit Browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(22, 22, 63); /* Background of the scrollbar track */
-    border-radius: 10px; /* Rounded edges */
+    background: #222222; /* Dark Gray */
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(139, 139, 233); /* Color of the scrollbar */
+    background: #555555; /* Medium Gray */
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(155, 98, 201); /* Color when hovered */
+    background: #777777; /* Light Gray */
 }

@@ -29,3 +29,10 @@ function toggleMenu() {
     var navLinks = document.getElementById("nav-links");
     navLinks.classList.toggle("show");
 }
+var animation = lottie.loadAnimation({
+    container: document.getElementById('developer-animation'),
+    renderer: 'svg',
+    
+    autoplay: true,
+    path: 'https://assets8.lottiefiles.com/packages/lf20_2omr5gpu.json' // Replace with your JSON file path
+});
