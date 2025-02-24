@@ -9,6 +9,10 @@
     cursor: pointer;
     color: #E0E0E0; /* Light Gray */
 }
+.left {
+    color: white; /* Text color */
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
 /* Mobile view */
 @media screen and (max-width: 768px) {
    
@@ -79,7 +83,13 @@ nav {
     z-index: 1000;
     padding: 15px 0;
 }
-  
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    
+    padding: 10px 20px;
+}
+
 body {
     padding-top: 100px;
 }
