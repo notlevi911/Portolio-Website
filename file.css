@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 .menu-icon {
@@ -13,15 +14,16 @@
     color: white; /* Text color */
     text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
 }
+
 /* Mobile view */
 @media screen and (max-width: 768px) {
-   
+    
     nav {
         flex-direction: row;
         justify-content: space-between;
         padding: 10px 20px;
     }
-
+    
     .menu-icon {
         display: block; /* Show the hamburger menu */
         padding-left: 150px;
@@ -50,6 +52,38 @@
     }
     
 }
+@media screen and (max-width: 781px) {
+    .menu-icon {
+        display: block; /* Show the hamburger menu */
+        padding-left: 0px;
+    
+    }
+   
+    .firstsection{
+        flex-direction: column;
+    }
+    .about-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 430px){
+    .menu-icon {
+        display: block; /* Show the hamburger menu */
+        padding-right: 30px
+    
+    }
+    .firstsection{
+        flex-direction: column;
+    }
+    .about-container{
+        flex-direction: column;
+        width: 80%;
+    }
+    
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -103,6 +137,7 @@ nav ul li a.active {
     font-weight: bold;
     border-bottom: 2px solid #B0B0B0; /* Medium Gray */
     transition: all 0.3s ease-in-out;
+    
 }
 
 nav ul li{
@@ -112,18 +147,22 @@ nav ul li{
 nav ul li a{
         text-decoration: none;
         color: #E0E0E0; /* Light Gray */
+        
 }
 nav ul li a:hover{
         color: #B0B0B0; /* Medium Gray */
+        
 }
 .left{
     font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
 }
 .firstsection{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
+    min-height: 85vh;
     margin: 0;
     padding: 50px 0;
 }
@@ -164,6 +203,10 @@ nav ul li a:hover{
     background: #777777; /* Light Gray */
 }
 /*ABOUT ME SECITON*/
+.myskills{
+    padding-top: 400px;
+
+}
 .about-container {
     display: flex;
     align-items: center;
@@ -224,6 +267,7 @@ nav ul li a:hover{
     color: #1a1a1a;
     margin-right: 15px;
     border: 2px solid rgb(0, 0, 0);
+    transition: all 0.3s;
 }
 
 .other-link {
@@ -233,6 +277,7 @@ nav ul li a:hover{
 }
 
 .resume-btn:hover{
+    transition: all 0.3s;
     background-color: #000000;
     color: #B0B0B0;
     border: 2px solid rgb(255, 255, 255);
@@ -266,4 +311,140 @@ nav ul li a:hover{
 
 .social-icons a:hover {
     color: #E0E0E0;
+}
+/* Mys Skills section*/
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skill-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 150px; /* Initial visible height */
+    overflow: hidden; /* Hide overflowing content */
+    transition: height 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer; /* Changes cursor to pointer */
+    user-select: none; /* Prevents text selection */
+}
+
+.skill-card:hover {
+    height: 250px; /* Expand height on hover */
+    transform: scale(1.05);
+}
+
+.tech-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    padding-top: 50px;
+     /* Initially smaller */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.skill-card:hover .tech-icons {
+    opacity: 1; /* Make icons visible */
+    transform: scale(1.2); /* Enlarge icons */
+    padding-top: 50px;
+}
+
+.tech-icons i {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.hidden {
+    display: none;
+}
+
+/*CONTACT AREA*/
+
+/* Contact Section */
+#contact {
+    background: #0e0e0e;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+input, textarea {
+    width: 95%;
+    padding: 12px;
+    background: #121212;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    font-family: monospace;
+    
+}
+
+input:focus, textarea:focus {
+    border-color: white;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #bbb;
 }

@@ -51,6 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", revealAbout);
     revealAbout(); // Run on load in case it's already in view
 });
-window.onload = function () {
+
+w.onload = function () {
     document.querySelector('nav ul li a[href="#home"]').click();
+};
+window.onload = function () {
+    document.getElementById("home").scrollIntoView({ behavior: "instant" });
 };
