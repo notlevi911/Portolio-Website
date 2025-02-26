@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", highlightNav);
 });
+lottie.setQuality("high"); // Try "low" or "medium" if still slow
 
 function toggleMenu() {
     var navLinks = document.getElementById("nav-links");
