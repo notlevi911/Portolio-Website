@@ -55,7 +55,7 @@ html {
 }
 
 section {
-    padding: 500px 0;
+    padding: 150px 0;
     margin: 50px 0;
 }
 html {
@@ -162,4 +162,108 @@ nav ul li a:hover{
 
 ::-webkit-scrollbar-thumb:hover {
     background: #777777; /* Light Gray */
+}
+/*ABOUT ME SECITON*/
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 10%;
+    background-color: #1a1a1a; /* Dark background for contrast */
+    color: #E0E0E0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-left img {
+    width: 250px;  /* Bigger image */
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #B0B0B0;
+}
+
+.about-right {
+    flex: 2;
+    padding-left: 50px;
+}
+
+.about-right h1 {
+    font-size: 3rem;  /* Bigger heading */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-right p {
+    font-size: 1.5rem;  /* Larger text */
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-links {
+    margin-top: 20px;
+}
+
+.resume-btn,
+.other-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.resume-btn {
+    background-color: #B0B0B0;
+    color: #1a1a1a;
+    margin-right: 15px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.other-link {
+    background-color: transparent;
+    color: #B0B0B0;
+    border: 2px solid #B0B0B0;
+}
+
+.resume-btn:hover{
+    background-color: #000000;
+    color: #B0B0B0;
+    border: 2px solid rgb(255, 255, 255);
+}
+.other-link:hover {
+    opacity: 0.8;
+}
+.about-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When scrolled into view */
+.about-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    color: #B0B0B0;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #E0E0E0;
 }

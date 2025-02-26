@@ -36,3 +36,21 @@ var animation = lottie.loadAnimation({
     autoplay: true,
     path: 'https://assets8.lottiefiles.com/packages/lf20_2omr5gpu.json' // Replace with your JSON file path
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutSection = document.querySelector(".about-container");
+
+    function revealAbout() {
+        const sectionTop = aboutSection.getBoundingClientRect().top;
+        const triggerPoint = window.innerHeight / 1.2;
+
+        if (sectionTop < triggerPoint) {
+            aboutSection.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", revealAbout);
+    revealAbout(); // Run on load in case it's already in view
+});
+window.onload = function () {
+    document.querySelector('nav ul li a[href="#home"]').click();
+};
