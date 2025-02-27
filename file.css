@@ -133,9 +133,9 @@ nav ul{
     justify-content: center;
 }
 nav ul li a.active {
-    color: #B0B0B0; /* Medium Gray */
+    color: cyan; /* Medium Gray */
     font-weight: bold;
-    border-bottom: 2px solid #B0B0B0; /* Medium Gray */
+    border-bottom: 2px solid cyan; /* Medium Gray */
     transition: all 0.3s ease-in-out;
     
 }
@@ -180,8 +180,8 @@ nav ul li a:hover{
      color: #B0B0B0; /* Medium Gray */
 }
 #element{
-    color: #B0B0B0; /* Medium Gray */
-    text-shadow: 0px 0px 10px rgba(176, 176, 176, 0.8);
+    color: cyan; /* Medium Gray */
+    text-shadow: 0px 0px 10px cyan;
     animation: glow 1.5s infinite alternate;
 }
 /* For Webkit Browsers (Chrome, Edge, Safari) */
@@ -278,9 +278,8 @@ nav ul li a:hover{
 
 .resume-btn:hover{
     transition: all 0.3s;
-    background-color: #000000;
-    color: #B0B0B0;
-    border: 2px solid rgb(255, 255, 255);
+    background-color: cyan;
+    color: #000000;
 }
 .other-link:hover {
     opacity: 0.8;
@@ -310,7 +309,7 @@ nav ul li a:hover{
 }
 
 .social-icons a:hover {
-    color: #E0E0E0;
+    color: cyan;
 }
 /* Mys Skills section*/
 .skills-container {
@@ -336,6 +335,8 @@ nav ul li a:hover{
 .skill-card:hover {
     height: 250px; /* Expand height on hover */
     transform: scale(1.05);
+    border: 2px solid cyan
+    
 }
 
 .tech-icons {
@@ -353,11 +354,12 @@ nav ul li a:hover{
     opacity: 1; /* Make icons visible */
     transform: scale(1.2); /* Enlarge icons */
     padding-top: 50px;
+    
 }
 
 .tech-icons i {
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: cyan;
 }
 
 .hidden {
@@ -430,7 +432,7 @@ button {
 }
 
 button:hover {
-    background: #ddd;
+    background: rgb(121, 255, 255);
 }
 
 /* Social Links */
@@ -446,7 +448,7 @@ button:hover {
 }
 
 .social-links a:hover {
-    color: #bbb;
+    color: cyan ;
 }
 
 
